@@ -6,15 +6,17 @@ import { Intro } from "./blocks/Intro";
 import { Play } from "./blocks/Play";
 import { Work } from "./blocks/Work";
 
+import { Layout } from "./components/Layout";
+
 function App() {
   return (
-    <div>
+    <Layout>
       <Intro />
       <About />
       <Work />
       <Play />
       <Contact />
-    </div>
+    </Layout>
   );
 }
 
