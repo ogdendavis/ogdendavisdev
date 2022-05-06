@@ -1,0 +1,37 @@
+/* Styles from previous version of site, used on self-portrait svg */
+.pixel--brown {
+  fill: #744720;
+}
+.pixel--light-brown {
+  fill: #8d5524;
+}
+.pixel--stubble {
+  fill: #c6915c;
+}
+.pixel--dark-brown {
+  fill: #5b3a1c;
+}
+.pixel--darkest-brown {
+  fill: #432c19;
+}
+.pixel--leather {
+  fill: #5d4037;
+}
+.pixel--dark-leather {
+  fill: #3e2723;
+}
+.pixel--skin {
+  fill: #ffcd94;
+}
+.pixel--black {
+  fill: #000;
+}
+.pixel--white {
+  fill: #fff;
+}
+.pixel--blue {
+  fill: #2196f3;
+}
+.pixel--gray {
+  fill: #808080;
+}

@@ -3,6 +3,11 @@ import { normalize } from "styled-normalize";
 
 const GlobalStyles = createGlobalStyle`
   ${normalize}
+
+  body {
+    background: lightyellow;
+    overflow-x: hidden;
+  }
 `;
 
 interface LayoutProps {
