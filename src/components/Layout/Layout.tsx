@@ -32,10 +32,6 @@ const GlobalStyles = createGlobalStyle<{ theme: ThemeType }>`
     font-family: monospace;
     overflow-x: hidden;
   }
-
-  a, a:visited {
-    color: yellow;
-  }
 `;
 
 interface LayoutProps {
