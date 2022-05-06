@@ -1,7 +1,3 @@
 export const Work = () => {
-  return (
-    <div>
-      I am the work section
-    </div>
-  )
-}
+  return <div>I am the work section</div>;
+};

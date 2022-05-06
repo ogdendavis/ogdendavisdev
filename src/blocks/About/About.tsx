@@ -1,7 +1,3 @@
 export const About = () => {
-  return (
-    <div>
-      I am the about section
-    </div>
-  )
-}
+  return <div>I am the about section</div>;
+};
