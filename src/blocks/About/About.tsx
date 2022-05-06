@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 // TEMP to confirm Intro size & position
 const AboutSection = styled.section`
