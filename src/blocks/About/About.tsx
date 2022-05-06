@@ -1,3 +1,10 @@
+import styled from "styled-components";
+
+// TEMP to confirm Intro size & position
+const AboutSection = styled.section`
+  background: green;
+`;
+
 export const About = () => {
-  return <div>I am the about section</div>;
+  return <AboutSection>I am the about section</AboutSection>;
 };

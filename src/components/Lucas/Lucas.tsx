@@ -20,18 +20,24 @@ const LucasContainer = styled.div<LucasContainerProps>`
   }
 `;
 
-export const Lucas = () => {
+interface LucasProps {
+  fadeDurationSecs: number;
+}
+
+/**
+ * Renders the Lucas portrait SVG, and controls its animation
+ *
+ * @param { number } fadeDurationSecs - how long it takes the svg to fade in
+ */
+export const Lucas = ({ fadeDurationSecs }: LucasProps) => {
   // Opacity of SVG - set to 1 on load to trigger fade-in animation
   const [opacity, setOpacity] = useState(0);
-
-  // How long portrait takes to fade in. Wave is triggered once done
-  const fadeDurationSecs = 2;
 
   useEffect(() => {
     setOpacity(1);
     // After full fade in, wave!
     setTimeout(lucasWave, fadeDurationSecs * 1000);
-  }, []);
+  }, [fadeDurationSecs]);
 
   return (
     <LucasContainer opacity={opacity} fadeDuration={fadeDurationSecs}>
