@@ -26,12 +26,26 @@ export const Work = () => {
       <p>
         Before I worked at Beepboop, I was (at various points) a web development
         contractor for a marketing and PR firm, a freelance web developer, a
-        computer science teacher, and a gym owner and manager. If you want the
-        full rundown, you can check out my{" "}
-        <a href="http://TODO:upload_resume" target="_blank" rel="noreferrer">
-          resume
-        </a>
-        .
+        computer science teacher, and a gym owner and manager.
+      </p>
+      <p>
+        Want to learn more? Check out my{" "}
+        <a
+          href="https://www.linkedin.com/in/ogdendavis/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          LinkedIn
+        </a>{" "}
+        and{" "}
+        <a
+          href="https://github.com/ogdendavis"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub
+        </a>{" "}
+        profiles.
       </p>
     </PageSection>
   );

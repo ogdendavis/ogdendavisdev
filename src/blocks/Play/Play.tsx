@@ -3,12 +3,20 @@ import { PageSection } from "../../components/PageSection";
 export const Play = () => {
   return (
     <PageSection darkMode>
-      <h2>Play</h2>
+      <h2>For Fun</h2>
       <p>
         When I'm not writing some sweet JavaScript or trouble-shooting a
         stubborn bit of CSS, I can often be found reading a novel (Terry
         Pratchett is a favorite of mine), getting my sweat on (I used to own a
-        gym!), or playing with my dogs.
+        gym!), or playing with{" "}
+        <a
+          href="https://www.instagram.com/figgyandcedric/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          my dogs
+        </a>
+        .
       </p>
       <p>
         If you're in Brooklyn, you can often find me grabbing a coffee from{" "}
