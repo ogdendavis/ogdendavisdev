@@ -1,19 +1,25 @@
 import styled from "styled-components";
 
-const DarkSection = styled.section`
-  background: ${({ theme }) => theme.colors.black};
-  color: ${({ theme }) => theme.colors.lightYellow};
+interface SectionProps {
+  children: React.ReactNode | React.ReactNode[];
+  darkMode?: boolean;
+}
+
+const Section = styled.section<SectionProps>`
+  background: ${({ theme, darkMode }) =>
+    darkMode ? theme.colors.black : theme.colors.lightYellow};
+  color: ${({ theme, darkMode }) =>
+    darkMode ? theme.colors.lightYellow : theme.colors.black};
 
   h2 {
     margin-top: 0;
   }
 
   a {
-    color: ${({ theme }) => theme.colors.brightYellow};
+    color: ${({ theme, darkMode }) =>
+      darkMode ? theme.colors.brightYellow : theme.colors.blue};
   }
 `;
-
-const LightSection = styled.section``;
 
 const ContentContainer = styled.div`
   padding: 1rem;
@@ -22,24 +28,15 @@ const ContentContainer = styled.div`
   max-width: 90%;
 `;
 
-interface SectionProps {
-  children: React.ReactNode | React.ReactNode[];
-  darkMode?: boolean;
-}
-
 /**
  * Wrap content in containers to control color/positioning and content width
  *
  * @param { boolean } darkMode true for dark background and light text
  */
 export const PageSection = ({ darkMode = false, children }: SectionProps) => {
-  return darkMode ? (
-    <DarkSection>
+  return (
+    <Section darkMode={darkMode}>
       <ContentContainer>{children}</ContentContainer>
-    </DarkSection>
-  ) : (
-    <LightSection>
-      <ContentContainer>{children}</ContentContainer>
-    </LightSection>
+    </Section>
   );
 };

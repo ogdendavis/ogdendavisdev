@@ -12,9 +12,10 @@ interface ThemeType {
 
 const theme = {
   colors: {
+    black: "#303438",
+    blue: "#0645AD",
     brightYellow: "yellow",
     lightYellow: "lightyellow",
-    black: "#303438",
   },
   contentWidth: "960px",
 };
