@@ -1,3 +1,9 @@
+import { PageSection } from "../../components/PageSection";
+
 export const Play = () => {
-  return <div>I am the play section</div>;
+  return (
+    <PageSection darkMode>
+      <h2>Play</h2>
+    </PageSection>
+  );
 };
