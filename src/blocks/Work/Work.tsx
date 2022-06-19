@@ -5,8 +5,17 @@ export const Work = () => {
     <PageSection>
       <h2>My Work</h2>
       <p>
-        I love solving problems. This paragraph should be about what I'm
-        excited/passionate about in software development!
+        I love writing software because the process combines all the best parts
+        of helping a friend, solving a puzzle, and writing a novel: I get to
+        create solutions to real-world problems that people face, engage my
+        creative thinking and problem-solving skills, and craft an experience
+        and message that uniquely guide the end-user through the application.
+      </p>
+      <p>
+        As a full-stack web application engineer, I get to do all of that while
+        working with cutting-edge web technology that's always evolving -- the
+        continuous process of learning new things and applying that knowledge
+        keeps me engaged, motivated, and having fun with my work!
       </p>
       <p>
         I'm currently the Founding Engineer at{" "}
@@ -24,9 +33,9 @@ export const Work = () => {
         <li>Refactor legacy code, manage tech debt, and maintain packages</li>
       </ul>
       <p>
-        Before I worked at Beepboop, I was (at various points) a web development
-        contractor for a marketing and PR firm, a freelance web developer, a
-        computer science teacher, and a gym owner and manager.
+        Before I became a software developer, I was (at various points) a web
+        development contractor for a marketing and PR firm, a freelance web
+        developer, a computer science teacher, and a gym owner and manager.
       </p>
       <p>
         Want to learn more? Check out my{" "}
