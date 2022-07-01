@@ -6,10 +6,16 @@ interface SectionProps {
 }
 
 const Section = styled.section<SectionProps>`
+  /* DISPLAY */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background: ${({ theme, darkMode }) =>
     darkMode ? theme.colors.black : theme.colors.lightYellow};
   color: ${({ theme, darkMode }) =>
     darkMode ? theme.colors.lightYellow : theme.colors.black};
+  min-height: 50vh;
 
   h2 {
     margin-top: 0;
