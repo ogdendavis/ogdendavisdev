@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components/macro";
 
-import { ReactComponent as LucasSVG } from "./lucas.svg";
+import { ReactComponent as LucasSVG } from "../../assets/lucas.svg";
 
 import "./lucasSvgStyles.css";
 
@@ -40,7 +40,11 @@ export const Lucas = ({ fadeDurationSecs }: LucasProps) => {
   }, [fadeDurationSecs]);
 
   return (
-    <LucasContainer opacity={opacity} fadeDuration={fadeDurationSecs}>
+    <LucasContainer
+      className="lucasContainer"
+      opacity={opacity}
+      fadeDuration={fadeDurationSecs}
+    >
       <LucasSVG />
     </LucasContainer>
   );
@@ -48,7 +52,7 @@ export const Lucas = ({ fadeDurationSecs }: LucasProps) => {
 
 // Helper function with code copied over from old website's modSVG function - doesn't do this in a react-y way, but the animation works!
 const lucasWave = (durationSecs = 1) => {
-  const rightArm = document.querySelector(".lucas__arm--right");
+  const rightArm = document.querySelector(".lucasContainer .lucas__arm--right");
 
   const wavePoints =
     "60,190 20,190 20,100 40,100 40,110 50,110 50,130 40,130 40,170 60,170";
