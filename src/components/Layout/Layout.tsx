@@ -1,6 +1,8 @@
 import { createGlobalStyle, ThemeProvider } from "styled-components/macro";
 import { normalize } from "styled-normalize";
 
+import "./svgStyles.css";
+
 interface ThemeType {
   colors: {
     brightYellow: string;

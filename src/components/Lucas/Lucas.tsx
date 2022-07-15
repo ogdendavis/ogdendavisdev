@@ -3,8 +3,6 @@ import styled from "styled-components/macro";
 
 import { ReactComponent as LucasSVG } from "../../assets/lucas.svg";
 
-import "./lucasSvgStyles.css";
-
 interface LucasContainerProps {
   opacity: number;
   fadeDuration: number;

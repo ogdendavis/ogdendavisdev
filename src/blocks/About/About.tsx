@@ -1,5 +1,7 @@
 import { PageSection } from "../../components/PageSection";
 
+import { AboutPortrait } from "./AboutPortrait";
+
 export const About = () => {
   return (
     <PageSection darkMode>
@@ -20,6 +22,7 @@ export const About = () => {
         </a>
         , and I live in Brooklyn with my wife and our two dogs.
       </p>
+      <AboutPortrait />
     </PageSection>
   );
 };

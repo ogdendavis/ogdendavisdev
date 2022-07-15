@@ -1,0 +1,49 @@
+/* Styles from previous version of site, used to fill in colors for svgs */
+.pixel--black {
+  fill: #000;
+}
+.pixel--blue {
+  fill: #2196f3;
+}
+.pixel--brown {
+  fill: #744720;
+}
+.pixel--dark-brown {
+  fill: #5b3a1c;
+}
+.pixel--dark-green {
+  fill: #388e3c;
+}
+.pixel--dark-leather {
+  fill: #3e2723;
+}
+.pixel--darkest-brown {
+  fill: #432c19;
+}
+.pixel--gray {
+  fill: #808080;
+}
+.pixel--leather {
+  fill: #5d4037;
+}
+.pixel--light-brown {
+  fill: #8d5524;
+}
+.pixel--light-gray {
+  fill: #c0c0c0;
+}
+.pixel--purple {
+  fill: #9c27b0;
+}
+.pixel--red {
+  fill: #f44336;
+}
+.pixel--skin {
+  fill: #ffcd94;
+}
+.pixel--stubble {
+  fill: #c6915c;
+}
+.pixel--white {
+  fill: #fff;
+}
