@@ -6,9 +6,16 @@ export const Play = () => {
       <h2>For Fun</h2>
       <p>
         When I'm not writing some sweet JavaScript or trouble-shooting a
-        stubborn bit of CSS, I can often be found reading a novel (Terry
-        Pratchett is a favorite of mine), getting my sweat on (I used to own a
-        gym!), or playing with{" "}
+        stubborn bit of CSS, I can often be found reading a novel (
+        <a
+          href="https://en.wikipedia.org/wiki/Terry_Pratchett"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Terry Pratchett
+        </a>{" "}
+        is a favorite of mine), getting my sweat on (I used to own a gym!), or
+        playing with{" "}
         <a
           href="https://www.instagram.com/figgyandcedric/"
           target="_blank"
