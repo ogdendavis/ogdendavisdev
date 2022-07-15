@@ -3,6 +3,7 @@ import styled from "styled-components";
 interface SectionProps {
   children: React.ReactNode | React.ReactNode[];
   darkMode?: boolean;
+  portrait?: React.ReactNode;
 }
 
 const Section = styled.section<SectionProps>`
@@ -34,15 +35,28 @@ const ContentContainer = styled.div`
   max-width: 90%;
 `;
 
+const Half = styled.div`
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+`;
+
 /**
  * Wrap content in containers to control color/positioning and content width
  *
  * @param { boolean } darkMode true for dark background and light text
  */
-export const PageSection = ({ darkMode = false, children }: SectionProps) => {
+export const PageSection = ({
+  darkMode = false,
+  children,
+  portrait = false,
+}: SectionProps) => {
   return (
     <Section darkMode={darkMode}>
-      <ContentContainer>{children}</ContentContainer>
+      <ContentContainer>
+        <Half>{children}</Half>
+        {portrait && <Half>{portrait}</Half>}
+      </ContentContainer>
     </Section>
   );
 };
