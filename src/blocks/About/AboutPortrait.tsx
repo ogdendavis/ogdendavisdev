@@ -5,9 +5,7 @@ import { ReactComponent as KimSVG } from "../../assets/kim.svg";
 import { ReactComponent as FiggySVG } from "../../assets/figgy.svg";
 import { ReactComponent as CedricSVG } from "../../assets/cedric.svg";
 
-const Frame = styled.div`
-  border-bottom: 2px solid ${({ theme }) => theme.colors.brightYellow};
-`;
+import { PortraitFrame } from "../../components/PortraitFrame";
 
 const FiggyContainer = styled.div`
   display: inline-block;
@@ -37,7 +35,7 @@ const KimContainer = styled.div`
 
 export const AboutPortrait = () => {
   return (
-    <Frame>
+    <PortraitFrame>
       <FiggyContainer>
         <FiggySVG />
       </FiggyContainer>
@@ -50,6 +48,6 @@ export const AboutPortrait = () => {
       <KimContainer>
         <KimSVG />
       </KimContainer>
-    </Frame>
+    </PortraitFrame>
   );
 };
