@@ -1,8 +1,10 @@
 import { PageSection } from "../../components/PageSection";
 
+import { PlayPortrait } from "./PlayPortrait";
+
 export const Play = () => {
   return (
-    <PageSection darkMode>
+    <PageSection darkMode portrait={<PlayPortrait />}>
       <h2>For Fun</h2>
       <p>
         When I'm not writing some sweet JavaScript or trouble-shooting a

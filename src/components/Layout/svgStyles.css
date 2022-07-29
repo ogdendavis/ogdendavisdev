@@ -5,8 +5,14 @@
 .pixel--blue {
   fill: #2196f3;
 }
+.pixel--bookshelf-back {
+  fill: #795548;
+}
 .pixel--brown {
   fill: #744720;
+}
+.pixel--cream {
+  fill: #ffd180;
 }
 .pixel--dark-brown {
   fill: #5b3a1c;
@@ -17,8 +23,14 @@
 .pixel--dark-leather {
   fill: #3e2723;
 }
+.pixel--dark-red {
+  fill: #dd2c00;
+}
 .pixel--darkest-brown {
   fill: #432c19;
+}
+.pixel--denim {
+  fill: #3f51b5;
 }
 .pixel--gray {
   fill: #808080;
@@ -35,6 +47,9 @@
 .pixel--light-gray {
   fill: #c0c0c0;
 }
+.pixel--orange {
+  fill: #ff5722;
+}
 .pixel--purple {
   fill: #9c27b0;
 }
@@ -49,6 +64,12 @@
 }
 .pixel--stubble {
   fill: #c6915c;
+}
+.pixel--teal {
+  fill: #008080;
+}
+.pixel--violet {
+  fill: #800080;
 }
 .pixel--white {
   fill: #fff;
