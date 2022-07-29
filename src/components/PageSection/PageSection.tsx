@@ -29,16 +29,25 @@ const Section = styled.section<SectionProps>`
 `;
 
 const ContentContainer = styled.div`
+  // DISPLAY
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   padding: 1rem;
   margin: auto;
   width: ${({ theme }) => theme.contentWidth};
   max-width: 90%;
 `;
 
-const Half = styled.div`
+interface HalfProps {
+  portraitFirst?: boolean;
+}
+
+const Half = styled.div<HalfProps>`
   display: inline-block;
-  vertical-align: middle;
-  width: 50%;
+  order: ${({ portraitFirst }) => (portraitFirst ? 0 : 1)};
+  width: 49%;
 `;
 
 /**
@@ -51,12 +60,20 @@ export const PageSection = ({
   children,
   portrait = false,
 }: SectionProps) => {
+  const hasPortrait = !!portrait;
+
+  const inner = hasPortrait ? (
+    <>
+      <Half>{children}</Half>
+      <Half portraitFirst={!darkMode}>{portrait}</Half>
+    </>
+  ) : (
+    <div>{children}</div>
+  );
+
   return (
     <Section darkMode={darkMode}>
-      <ContentContainer>
-        <Half>{children}</Half>
-        {portrait && <Half>{portrait}</Half>}
-      </ContentContainer>
+      <ContentContainer>{inner}</ContentContainer>
     </Section>
   );
 };
