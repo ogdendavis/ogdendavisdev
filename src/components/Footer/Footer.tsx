@@ -7,6 +7,11 @@ const Shoe = styled.footer`
 
   font-size: 0.75rem;
   padding: 0.25rem 0.75rem;
+
+  @media only screen and (max-width: 700px) {
+    display: block;
+    text-align: center;
+  }
 `;
 
 export const Footer = () => (

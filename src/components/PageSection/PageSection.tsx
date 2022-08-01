@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 interface SectionProps {
   children: React.ReactNode | React.ReactNode[];
@@ -38,6 +38,10 @@ const ContentContainer = styled.div`
   margin: auto;
   width: ${({ theme }) => theme.contentWidth};
   max-width: 90%;
+
+  @media only screen and (max-width: 700px) {
+    display: block;
+  }
 `;
 
 interface HalfProps {
@@ -48,6 +52,12 @@ const Half = styled.div<HalfProps>`
   display: inline-block;
   order: ${({ portraitFirst }) => (portraitFirst ? 0 : 1)};
   width: 49%;
+
+  @media only screen and (max-width: 700px) {
+    display: block;
+    margin: auto;
+    width: 95%;
+  }
 `;
 
 /**
