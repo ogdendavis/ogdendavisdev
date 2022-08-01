@@ -8,10 +8,10 @@ export const Work = () => {
       <h2>My Work</h2>
       <p>
         I love writing software because the process combines all the best parts
-        of helping a friend, solving a puzzle, and writing a novel: I get to
-        create solutions to real-world problems that people face, engage my
-        creative thinking and problem-solving skills, and craft an experience
-        and message that uniquely guide the end-user through the application.
+        of helping a friend, solving a puzzle, and writing a novel: I create
+        solutions to real-world problems that people face, engage my creative
+        thinking and problem-solving skills, and craft an experience and message
+        that uniquely guide the end-user through the application.
       </p>
       <p>
         As a full-stack web application engineer, I get to do all of that while
