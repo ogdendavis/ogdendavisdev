@@ -5,7 +5,7 @@ export const PortraitFrame = styled.div`
   position: relative;
   width: 100%;
 
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: ${({ theme }) => theme.breakpoint}) {
     margin: auto;
     max-width: 380px;
   }

@@ -39,7 +39,7 @@ const ContentContainer = styled.div`
   width: ${({ theme }) => theme.contentWidth};
   max-width: 90%;
 
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: ${({ theme }) => theme.breakpoint}) {
     display: block;
   }
 `;
@@ -53,7 +53,7 @@ const Half = styled.div<HalfProps>`
   order: ${({ portraitFirst }) => (portraitFirst ? 0 : 1)};
   width: 49%;
 
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: ${({ theme }) => theme.breakpoint}) {
     display: block;
     margin: auto;
     width: 95%;

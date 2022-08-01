@@ -13,6 +13,7 @@ interface ThemeType {
 }
 
 const theme = {
+  breakpoint: "700px",
   colors: {
     black: "#303438",
     blue: "#0645AD",
