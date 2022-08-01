@@ -6,6 +6,7 @@ import { Intro } from "./blocks/Intro";
 import { Play } from "./blocks/Play";
 import { Work } from "./blocks/Work";
 
+import { Footer } from "./components/Footer";
 import { Layout } from "./components/Layout";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Work />
       <Play />
       <Contact />
+      <Footer />
     </Layout>
   );
 }
